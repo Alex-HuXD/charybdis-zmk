@@ -66,7 +66,7 @@
             label = "ColeMak-DH";
             bindings = <
               &kp        Q  &kp       W  &kp       F  &kp        P   &kp B        &kp J       &kp        L  &kp       U      &kp      Y    &kp        SEMICOLON  
-              &mt  LCTRL A  &mt LALT  R  &mt LGUI  S  &mt LSHFT  T   &kp G        &kp M       &mt RSHFT  N  &mt RCTRL E      &mt RALT I    &mt RGUI   O 
+              &mt  LCTRL A  &mt LALT  R  &mt LGUI  S  &mt LSHFT  T   &kp G        &kp M       &mt RSHFT  N  &mt RGUI  E      &mt RALT I    &mt RCTRL  O 
               &kp        Z  &kp       X  &kp       C  &kp        D   &kp V        &kp K       &kp        H  &kp       COMMA  &kp      DOT  &kp        SLASH
                                          &lt MED ESC  &lt NAV SPACE  &sl NUFU     &kp ENTER   &sl SYM
             >;
