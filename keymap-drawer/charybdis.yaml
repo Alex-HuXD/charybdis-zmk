@@ -34,7 +34,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: Media}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
   - {t: '$$mdi:keyboard-tab$$', h: Numeral/Function}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: Pointer}
   - {t: '$$mdi:backspace$$', h: Symbol}
   Numeral/Function:
   - {t: ▽, type: trans}
@@ -214,7 +214,7 @@ layers:
   - '&mkp RCLK'
   - '&mkp LCLK'
   - '&mkp MCLK'
-  - '&mkp MCLK'
+  - {t: '&mkp MCLK', type: held}
   - '&mkp LCLK'
   Scroll:
   - {t: ▽, type: trans}
@@ -250,7 +250,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   Sniper:
   - {t: ▽, type: trans}
@@ -286,7 +286,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
