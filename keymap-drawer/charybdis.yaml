@@ -190,7 +190,7 @@ layers:
   - BT NXT
   - $$mdi:bluetooth-off$$
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - {t: ▽, type: trans}
   - $$mdi:skip-previous$$
   - $$mdi:volume-low$$
   - $$mdi:volume-off$$
