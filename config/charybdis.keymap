@@ -5,11 +5,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
-#define NUFU 1
-#define SYM 2
-#define NAV 3
-#define MED 4
-#define POI 5
+#define NAV 1
+#define FUC 2
+#define NUM 3
+#define SYM 4
+#define MED 5
 #define SCR 6
 #define SNI 7
 
@@ -68,11 +68,31 @@
               &kp        Q  &kp       W  &kp       F  &kp        P   &kp      B        &kp     J       &kp       L          &kp       U      &kp      Y    &kp        SEMICOLON  
               &mt  LCTRL A  &mt LALT  R  &mt LGUI  S  &mt LSHFT  T   &kp      G        &kp     M       &mt RSHFT N          &mt RGUI  E      &mt RALT I    &mt RCTRL  O 
               &kp        Z  &kp       X  &kp       C  &kp        D   &kp      V        &kp     K       &kp       H          &kp       COMMA  &kp      DOT  &kp        SLASH
-                                         &lt MED ESC  &lt NAV SPACE  &lt NUFU TAB      &lt POI ENTER   &lt SYM   BACKSPACE
+                                         &lt MED ESC  &lt NAV SPACE  &lt FUC  TAB      &lt SYM ENTER   &lt NUM   BACKSPACE
             >;
         };
 
-        NuFu {
+        Navigation {
+            label = "Navigation";
+            bindings = <
+                         &trans  &trans  &trans  &trans  &trans         &trans    &trans         &kp TAB      &trans    &kp DELETE
+                         &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT &kp BACKSPACE
+                         &trans  &trans  &trans  &trans  &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &kp INS
+                                         &trans  &trans  &trans         &trans    &trans
+            >;
+        };
+
+        Function {
+            label = "Function";
+            bindings = <
+              &trans       &trans       &trans        &trans        &trans               &trans &trans        &trans        &trans       &trans
+              &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans               &trans &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI
+              &trans       &mo SCR      &mo SNI       &trans        &trans               &trans &trans        &tog SNI      &tog SCR     &trans
+                                            &mkp RCLK  &mkp LCLK  &mkp MCLK         &mkp MCLK  &mkp LCLK
+            >;
+        };
+
+        Numeral {
             label = "Numeral/Function";
             bindings = <
                 &trans  &kp F7  &kp F8  &kp F9 &kp F12        &trans  &kp N7  &kp N8  &kp N9  &kp DELETE
@@ -92,15 +112,7 @@
             >;
         };
 
-        Navigation {
-            label = "Navigation";
-            bindings = <
-                         &trans  &trans  &trans  &trans  &trans         &trans    &trans         &kp TAB      &trans    &kp DELETE
-                         &trans  &trans  &trans  &trans  &trans         &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT &kp BACKSPACE
-                         &trans  &trans  &trans  &trans  &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END   &kp INS
-                                         &trans  &trans  &trans         &trans    &trans
-            >;
-        };
+        
 
         Media {
             label = "Media";
@@ -112,15 +124,7 @@
             >;
         };
 
-        Pointer {
-            label = "Pointer";
-            bindings = <
-              &trans       &trans       &trans        &trans        &trans               &trans &trans        &trans        &trans       &trans
-              &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans               &trans &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI
-              &trans       &mo SCR      &mo SNI       &trans        &trans               &trans &trans        &tog SNI      &tog SCR     &trans
-                                            &mkp RCLK  &mkp LCLK  &mkp MCLK         &mkp MCLK  &mkp LCLK
-            >;
-        };
+        
 
         Scroll {
             label = "Scroll";
