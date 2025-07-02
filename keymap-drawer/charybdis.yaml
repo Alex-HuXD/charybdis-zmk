@@ -19,9 +19,9 @@ layers:
   - M
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: E, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
-  - Z
+  - {t: Z, h: Pointer}
   - X
   - C
   - D
@@ -30,12 +30,12 @@ layers:
   - H
   - ','
   - .
-  - 5 SLASH
-  - {t: '$$mdi:keyboard-esc$$', h: Navigation}
-  - {t: '$$mdi:keyboard-space$$', h: Numeral/Function}
-  - {t: '$$mdi:keyboard-tab$$', h: Symbol}
-  - {t: '$$mdi:keyboard-return$$', h: Pointer}
-  - {t: '$$mdi:backspace$$', h: Media}
+  - {t: /, h: Pointer}
+  - {t: '$$mdi:keyboard-esc$$', h: Media}
+  - {t: '$$mdi:keyboard-space$$', h: Navigation}
+  - {t: Numeral/Function, h: sticky}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: Symbol, h: sticky}
   Numeral/Function:
   - {t: ▽, type: trans}
   - F7
@@ -68,8 +68,8 @@ layers:
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '0'
   Symbol:
@@ -105,9 +105,9 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Navigation:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -139,8 +139,8 @@ layers:
   - PAGE UP
   - END
   - INS
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -175,11 +175,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - PLAY PAUSE
   - STOP
   - STOP
-  - {t: PLAY PAUSE, type: held}
+  - PLAY PAUSE
   Pointer:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -201,7 +201,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: ▽, type: trans}
+  - {type: held}
   - Scroll
   - Sniper
   - {t: ▽, type: trans}
@@ -214,7 +214,7 @@ layers:
   - '&mkp RCLK'
   - '&mkp LCLK'
   - '&mkp MCLK'
-  - {t: '&mkp MCLK', type: held}
+  - '&mkp MCLK'
   - '&mkp LCLK'
   Scroll:
   - {t: ▽, type: trans}
@@ -237,7 +237,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -250,7 +250,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Sniper:
   - {t: ▽, type: trans}
@@ -273,7 +273,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -286,7 +286,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
