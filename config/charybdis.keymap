@@ -5,11 +5,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
-#define NUM 1 
-#define NAV 2
-#define MED 3
-#define MOS 4
-#define SYS 5
+#define NUFU 1
+#define SYM 2
+#define NAV 3
+#define MED 4
+#define POI 5
 #define SCR 6
 #define SNI 7
 
@@ -62,18 +62,18 @@
 
     keymap {
         compatible = "zmk,keymap";
-        BASE {
+        Base {
             label = "ColeMak-DH";
             bindings = <
-              &kp        Q  &kp       W  &kp       F  &kp        P   &kp      B        &kp     J        &kp       L          &kp       U      &kp      Y    &kp        SEMICOLON  
-              &mt  LCTRL A  &mt LALT  R  &mt LGUI  S  &mt LSHFT  T   &kp      G        &kp     M        &mt RSHFT N          &mt RGUI  E      &mt RALT I    &mt RCTRL  O 
-              &kp        Z  &kp       X  &kp       C  &kp        D   &kp      V        &kp     K        &kp       H          &kp       COMMA  &kp      DOT  &kp        SLASH
-                                         &lt MED ESC  &lt NAV SPACE  &lt NUM TAB       &kp MOS ENTER    &lt SYM   BACKSPACE
+              &kp        Q  &kp       W  &kp       F  &kp        P   &kp      B        &kp     J       &kp       L          &kp       U      &kp      Y    &kp        SEMICOLON  
+              &mt  LCTRL A  &mt LALT  R  &mt LGUI  S  &mt LSHFT  T   &kp      G        &kp     M       &mt RSHFT N          &mt RGUI  E      &mt RALT I    &mt RCTRL  O 
+              &kp        Z  &kp       X  &kp       C  &kp        D   &kp      V        &kp     K       &kp       H          &kp       COMMA  &kp      DOT  &kp        SLASH
+                                         &lt MED ESC  &lt NAV SPACE  &lt NUFU TAB      &lt POI ENTER   &lt SYM   BACKSPACE
             >;
         };
 
-        NUM {
-            label = "Number";
+        NuFu {
+            label = "Numeral/Function";
             bindings = <
                 &trans  &kp F7  &kp F8  &kp F9 &kp F12        &trans  &kp N7  &kp N8  &kp N9  &kp DELETE
                 &trans  &kp F4  &kp F5  &kp F6 &kp F11        &trans  &kp N4  &kp N5  &kp N6  &kp BACKSPACE
@@ -82,7 +82,17 @@
             >;
         };
 
-        NAV {
+        Symbol {
+            label = "Symbol";
+            bindings = <
+              &kp TILDE &kp AMPS  &kp STAR   &trans    &kp PLUS        &trans &kp LBRC  &kp RBRC  &trans  &kp PIPE
+              &kp MINUS &kp DLLR  &kp PRCNT  &kp CARET &kp EQUAL       &trans &kp LPAR  &kp RPAR  &kp DQT &kp APOS
+              &kp UNDER &kp EXCL  &kp AT     &kp HASH  &kp GRAVE       &trans &kp LBKT  &kp RBKT  &trans  &kp BSLH
+                                  &trans     &trans    &trans          &trans &trans
+            >;
+        };
+
+        Navigation {
             label = "Navigation";
             bindings = <
                          &trans  &trans  &trans  &trans  &trans         &trans    &trans         &kp TAB      &trans    &kp DELETE
@@ -92,20 +102,8 @@
             >;
         };
 
-        MED {
+        Media {
             label = "Media";
-            bindings = <
-              &kp TILDE &kp AMPS  &kp STAR   &trans    &kp PLUS        &trans &kp LBRC  &kp RBRC  &trans  &kp PIPE
-              &kp MINUS &kp DLLR  &kp PRCNT  &kp CARET &kp EQUAL       &trans &kp LPAR  &kp RPAR  &kp DQT &kp APOS
-              &kp UNDER &kp EXCL  &kp AT     &kp HASH  &kp GRAVE       &trans &kp LBKT  &kp RBKT  &trans  &kp BSLH
-                                  &trans     &trans    &trans          &trans &trans
-            >;
-        };
-
-        
-
-        SYM {
-            label = "System";
             bindings = <
               &trans     &trans        &bt BT_CLR_ALL &trans       &trans            &trans      &trans        &bt BT_CLR_ALL  &trans        &trans
               &kp C_PREV &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP &kp C_NEXT        &kp C_PREV  &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP  &kp C_NEXT
@@ -114,8 +112,17 @@
             >;
         };
 
+        Pointer {
+            label = "Pointer";
+            bindings = <
+              &trans       &trans       &trans        &trans        &trans               &trans &trans        &trans        &trans       &trans
+              &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &trans               &trans &kp RSHFT     &kp RCTRL     &kp RALT     &kp RGUI
+              &trans       &mo SCR      &mo SNI       &trans        &trans               &trans &trans        &tog SNI      &tog SCR     &trans
+                                            &mkp RCLK  &mkp LCLK  &mkp MCLK         &mkp MCLK  &mkp LCLK
+            >;
+        };
 
-        SCR {
+        Scroll {
             label = "Scroll";
             bindings = <
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -125,7 +132,7 @@
             >;
         };
 
-        SNI {
+        Sniper {
             label = "Sniper";
             bindings = <
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
