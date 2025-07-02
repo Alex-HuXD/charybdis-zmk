@@ -18,7 +18,7 @@ layers:
   - G
   - M
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: E, h: LEFT GUI}
   - {t: I, h: '$$mdi:apple-keyboard-option$$'}
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - Z
@@ -32,47 +32,47 @@ layers:
   - .
   - /
   - {t: '$$mdi:keyboard-esc$$', h: Media}
-  - {t: '$$mdi:keyboard-space$$', h: Navigation}
-  - {t: '$$mdi:keyboard-tab$$', h: Numeral/Function}
+  - {t: '$$mdi:keyboard-space$$', h: System}
+  - {t: '$$mdi:keyboard-tab$$', h: Navigation}
   - {t: '$$mdi:keyboard-return$$', h: Pointer}
-  - {t: '$$mdi:backspace$$', h: Symbol}
-  Numeral/Function:
+  - {t: '$$mdi:backspace$$', h: Number}
+  Navigation:
   - {t: ▽, type: trans}
-  - F7
-  - F8
-  - F9
-  - F12
   - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - $$mdi:backspace-reverse-outline$$
   - {t: ▽, type: trans}
-  - F4
-  - F5
-  - F6
-  - F11
   - {t: ▽, type: trans}
-  - '4'
-  - '5'
-  - '6'
-  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F10
+  - CUT
+  - COPY
+  - PASTE
+  - UNDO
+  - REDO
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INS
+  - HOME
+  - PAGE DOWN
+  - PAGE UP
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - '0'
-  Symbol:
+  - {t: ▽, type: trans}
+  Number:
   - '~'
   - '&'
   - '*'
@@ -108,7 +108,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  Navigation:
+  System:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
