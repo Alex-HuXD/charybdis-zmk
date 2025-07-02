@@ -105,10 +105,10 @@
         Symbol {
             label = "Symbol";
             bindings = <
-              &kp LEFT_BRACE    &kp AMPS    &kp STAR   &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE     &trans    &trans  &trans  &trans  &trans
-              &kp DOUBLE_QUOTES &kp DLLR    &kp PRCNT  &kp CARET              &kp PLUS            &trans    &trans  &trans  &trans  &trans
-              &kp TILDE         &kp EXCL    &kp AT     &kp HASH               &kp PIPE            &trans    &trans  &trans  &trans  &trans
-                                            &trans     &trans                 &trans              &trans    &trans
+              &kp LEFT_BRACE    &kp AMPS    &kp STAR                &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE          &trans    &trans  &trans  &trans  &trans
+              &kp DOUBLE_QUOTES &kp DLLR    &kp PRCNT               &kp CARET              &kp PLUS                 &trans    &trans  &trans  &trans  &trans
+              &kp TILDE         &kp EXCL    &kp AT                  &kp HASH               &kp PIPE                 &trans    &trans  &trans  &trans  &trans
+                                            &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp UNDER                &trans    &trans
             >;
         };
 
