@@ -63,13 +63,13 @@
         Base {
             label = "ColeMak-DH";
             bindings = <
-              &kp        Q  &kp       W  &kp        F  &kp        P   &kp B        &kp J       &kp        L  &kp        U      &kp       Y    &kp         SEMICOLON  
-              &hml LCTRL A  &hml LALT R  &hml LCMD  S  &hml LSHFT T   &kp G        &kp M       &hmr RSHFT N  &hmr RCMD  E      &hmr RALT I    &hmr RCTRL  O 
-              &lt   POI  Z  &kp       X  &kp        C  &kp        D   &kp V        &kp K       &kp        H  &kp        COMMA  &kp       DOT  &lt         POI SLASH
-                                        &lt MED ESC   &lt NAV SPACE   &sl NUFU     &kp ENTER   &sl SYM
+              &kp        Q  &kp       W  &kp        F  &kp        P       &kp      B          &kp     J       &kp         L          &kp        U      &kp       Y    &kp         SEMICOLON  
+              &hml LCTRL A  &hml LALT R  &hml LCMD  S  &hml LSHFT T       &kp      G          &kp     M       &hmr RSHFT  N          &hmr RCMD  E      &hmr RALT I    &hmr RCTRL  O 
+              &kp        Z  &kp       X  &kp        C  &kp        D       &kp      V          &kp     K       &kp         H          &kp        COMMA  &kp       DOT  &lt         POI SLASH
+                                        &lt MED ESC    &lt NAV    SPACE   &lt NUFU TAB        &lt POI ENTER   &lt  SYM    BACKSPACE
             >;
         };
-
+--
         NuFu {
             label = "Numeral/Function";
             bindings = <
