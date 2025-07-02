@@ -18,8 +18,10 @@
 };
 
 &mt {
-    tapping-term-ms = <200>;
-    require-prior-idle-ms = <150>;
+    quick-tap-ms = <100>;
+    global-quick-tap;
+    flavor = "tap-preferred";
+    tapping-term-ms = <170>;
 };
 
 / {
@@ -63,13 +65,13 @@
         Base {
             label = "ColeMak-DH";
             bindings = <
-              &kp        Q  &kp       W  &kp        F    &kp        P       &kp      B          &kp     J       &kp         L          &kp        U      &kp       Y    &kp         SEMICOLON  
-              &hml LCTRL A  &hml LALT R  &hml LCMD  S    &hml LSHFT T       &kp      G          &kp     M       &hmr RSHFT  N          &hmr RCMD  E      &hmr RALT I    &hmr RCTRL  O 
-              &kp        Z  &kp       X  &kp        C    &kp        D       &kp      V          &kp     K       &kp         H          &kp        COMMA  &kp       DOT  &kp         SLASH
-                                         &lt MED    ESC  &lt NAV    SPACE   &lt NUFU TAB        &lt POI ENTER   &lt  SYM    BACKSPACE
+              &kp        Q  &kp       W  &kp       F  &kp        P   &kp B        &kp J       &kp        L  &kp       U      &kp      Y    &kp        SEMICOLON  
+              &mt  LCTRL A  &mt LALT  R  &mt LGUI  S  &mt LSHFT  T   &kp G        &kp M       &mt RSHFT  N  &mt RCTRL E      &mt RALT I    &mt RGUI   O 
+              &kp        Z  &kp       X  &kp       C  &kp        D   &kp V        &kp K       &kp        H  &kp       COMMA  &kp      DOT  &kp        SLASH
+                                         &lt MED ESC  &lt NAV SPACE  &sl NUFU     &kp ENTER   &sl SYM
             >;
         };
---
+
         NuFu {
             label = "Numeral/Function";
             bindings = <
