@@ -64,50 +64,50 @@
         Base {
             label = "ColeMak-DH";
             bindings = <
-  &kp Q        &kp W       &kp F        &kp P          &kp B           &kp J          &kp L              &kp U           &kp Y       &kp SEMICOLON
-  &mt LCTRL A  &mt LALT R  &mt LGUI S   &mt LSHFT T    &kp G           &kp M          &mt RSHFT N        &mt LEFT_GUI E  &mt RALT I  &mt RCTRL O
-  &kp Z        &kp X       &kp C        &kp D          &kp V           &kp K          &kp H              &kp COMMA       &kp DOT     &kp SLASH
-                           &lt MED ESC  &lt NAV SPACE  &lt NUFU TAB    &lt POI ENTER  &lt SYM BACKSPACE
+  &kp Q        &kp W       &kp F        &kp P        &kp B           &kp J        &kp L              &kp U           &kp Y       &kp SEMICOLON
+  &mt LCTRL A  &mt LALT R  &mt LGUI S   &mt LSHFT T  &kp G           &kp M        &mt RSHFT N        &mt LEFT_GUI E  &mt RALT I  &mt RCTRL O
+  &kp Z        &kp X       &kp C        &kp D        &kp V           &kp K        &kp H              &kp COMMA       &kp DOT     &kp SLASH
+                           &lt MED ESC  &lt 1 SPACE  &lt NUFU TAB    &lt 3 ENTER  &lt SYM BACKSPACE
             >;
         };
 
         Nav {
             label = "Navigation";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &kp K_CUT     &kp K_COPY  &kp K_PASTE    &kp K_UNDO   &kp K_REDO
-  &trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT
-  &trans  &trans  &trans  &trans  &trans    &kp INS       &kp HOME    &kp PAGE_DOWN  &kp PAGE_UP  &kp END
-                  &trans  &trans  &trans    &trans        &trans
+  &kp GRAVE             &kp LEFT_BRACKET  &kp RIGHT_BRACKET      &trans  &trans    &kp K_REDO    &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO
+  &kp SQT               &kp LPAR          &kp RIGHT_PARENTHESIS  &trans  &trans    &kp CAPSLOCK  &kp LEFT     &kp DOWN       &kp UP       &kp RIGHT
+  &kp NON_US_BACKSLASH  &kp LEFT_BRACE    &kp RIGHT_BRACE        &trans  &trans    &kp INS       &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END
+                                          &trans                 &trans  &trans    &trans        &trans
             >;
         };
 
         NUM {
             label = "Number";
             bindings = <
-  &kp TILDE  &kp AMPS  &kp STAR   &trans     &kp PLUS     &trans  &kp LBRC  &kp RBRC  &trans   &kp PIPE
-  &kp MINUS  &kp DLLR  &kp PRCNT  &kp CARET  &kp EQUAL    &trans  &kp LPAR  &kp RPAR  &kp DQT  &kp APOS
-  &kp UNDER  &kp EXCL  &kp AT     &kp HASH   &kp GRAVE    &trans  &kp LBKT  &kp RBKT  &trans   &kp BSLH
-                       &trans     &trans     &trans       &trans  &trans
+  &kp LEFT_BRACKET  &kp N7        &kp N8        &kp NUMBER_9  &kp RIGHT_BRACKET       &none   &none   &none   &none   &none
+  &kp SQT           &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL               &none   &trans  &trans  &trans  &trans
+  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NON_US_BACKSLASH    &none   &none   &none   &none   &none
+                                  &kp PERIOD    &kp NUMBER_0  &kp MINUS               &trans  &trans
             >;
         };
 
-        SYS {
-            label = "System";
+        SYM {
+            label = "symbols";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans    &trans         &kp TAB      &trans     &kp DELETE
-  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp BACKSPACE
-  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp INS
-                  &trans  &trans  &trans    &trans    &trans
+  &kp LEFT_BRACE     &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none   &none   &none   &none   &none
+  &kp DOUBLE_QUOTES  &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &none   &trans  &trans  &trans  &trans
+  &kp TILDE          &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &none   &none   &none   &none   &none
+                                      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans  &trans
             >;
         };
 
         Media {
             label = "Media";
             bindings = <
-  &trans      &trans        &bt BT_CLR_ALL  &trans            &trans        &trans      &trans            &bt BT_CLR_ALL  &trans        &trans
-  &kp C_PREV  &kp C_VOL_DN  &kp C_MUTE      &kp C_VOL_UP      &kp C_NEXT    &kp C_PREV  &kp C_VOL_DN      &kp C_MUTE      &kp C_VOL_UP  &kp C_NEXT
-  &trans      &trans        &trans          &trans            &trans        &trans      &trans            &trans          &trans        &trans
-                            &trans          &kp C_PLAY_PAUSE  &kp C_STOP    &kp C_STOP  &kp C_PLAY_PAUSE
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4    &bt BT_PRV  &bt BT_NXT        &bt BT_CLR_ALL  &trans        &bootloader
+  &kp C_PREV    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP      &kp C_NEXT      &kp C_PREV  &kp C_VOL_DN      &kp C_MUTE      &kp C_VOL_UP  &kp C_NEXT
+  &trans        &trans        &trans        &trans            &trans          &trans      &trans            &trans          &trans        &trans
+                              &trans        &kp C_PLAY_PAUSE  &kp C_STOP      &kp C_STOP  &kp C_PLAY_PAUSE
             >;
         };
 
