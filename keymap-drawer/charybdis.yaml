@@ -107,7 +107,7 @@ layers:
   - '&mkp LCLK'
   - {t: '&mkp MCLK', type: held}
   - {t: ▽, type: trans}
-  - '&trans LCLK'
+  - {t: ▽, type: trans}
   Numeral/Function:
   - '['
   - '7'
